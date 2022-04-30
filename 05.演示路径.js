@@ -17,7 +17,6 @@ const fs = require('fs')
 // })
 
 // __dirname 当前文件所在的目录
-console.log(__dirname);
 fs.readFile(__dirname + '/files/1.txt', 'utf8', function(err, dataStr) {
     if (err) {
         return console.log('读取文件失败' + err.message);
