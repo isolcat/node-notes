@@ -21,3 +21,7 @@ module.exports = {
     // 使用require()方法导入模块时，导入的结果永远以module.exports指向的对象为准
 
 // 由于module.export单词过长，所以node又推出了一个export对象，二者指向同一个对象
+
+
+// module.exports 和 export 之间有什么区别？
+// 前者公开了它指向的对象。 后者公开了它指向的对象的属性。
