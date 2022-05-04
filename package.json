@@ -1,0 +1,25 @@
+{
+    "name": "node",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/isolcat/node-.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/isolcat/node-/issues"
+    },
+    "homepage": "https://github.com/isolcat/node-#readme",
+    "dependencies": {
+        "art-template": "^4.13.2",
+        "jquery": "^3.6.0",
+        "moment": "^2.29.3"
+    }
+}
