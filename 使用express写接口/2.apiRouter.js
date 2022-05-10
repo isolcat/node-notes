@@ -23,4 +23,12 @@ router.post('/post', (req, res) => {
     })
 })
 
+// 定义DELETE接口
+router.delete('/delete', (req, res) => {
+    res.send({
+        status: 0,
+        msg: 'DELETE请求成功'
+    })
+})
+
 module.exports = router

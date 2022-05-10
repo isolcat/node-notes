@@ -12,6 +12,7 @@
 <body>
     <button id="btnGET">GET</button>
     <button id="btnPOST">POST</button>
+    <button id="btnDelete">DELETE</button>
 
     <script>
         $(() => {
@@ -31,15 +32,25 @@
                 })
                 // 测试POST接口
             $('#btnPOST').click(() => {
+                    $.ajax({
+                        type: 'POST',
+                        url: 'http://127.0.0.1/api/post',
+                        data: {
+                            bookName: '水浒传',
+                            author: '施耐庵'
+                        },
+                        success: (res) => {
+                            console.log(res);
+                        }
+                    })
+                })
+                // 为删除按钮绑定点击事件处理函数
+            $('btnDelete').on('click', function() {
                 $.ajax({
-                    type: 'POST',
-                    url: 'http://127.0.0.1/api/post',
-                    data: {
-                        bookName: '水浒传',
-                        author: '施耐庵'
-                    },
+                    type: 'DELETE',
+                    url: 'http://127.0.0.1/api/delete',
                     success: (res) => {
-                        console.log(res);
+                        console.log(res)
                     }
                 })
             })
