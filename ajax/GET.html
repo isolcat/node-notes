@@ -26,7 +26,7 @@
             // 创建对象
             const xhr = new XMLHttpRequest()
                 // 初始化 设置请求方法和URL
-            xhr.open('GET', 'http://localhost:3000/server');
+            xhr.open('GET', 'http://127.0.0.1:8000/server');
             // 发送
             xhr.send();
             // 事件绑定，处理服务端返回的结果
@@ -42,8 +42,6 @@
 
                         // 设置result文本
                         result.innerHTML = xhr.response
-                    } else {
-
                     }
                 }
             }

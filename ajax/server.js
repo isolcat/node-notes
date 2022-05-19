@@ -1,7 +1,6 @@
-const { response } = require('express')
 const express = require('express')
 const app = express()
-const port = 3000
+const port = 8000
 
 app.get('/server', (req, res) => {
     res.setHeader('Access-Controll-Allow-origin', '*');
